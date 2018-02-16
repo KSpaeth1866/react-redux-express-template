@@ -1,23 +1,28 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Title from '../components/Title';
 
-const AppContainer = ({ name }) => {
-  return (
-    <div>
-      <Title name={name} />
-    </div>
-  );
-};
+class AppContainer extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <Title/>
+      </div>
+    );
+  }
+}
 
 AppContainer.propTypes = {
   name: PropTypes.string,
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (/* state */) => {
   return {
-    name: state.name
   };
 };
 
