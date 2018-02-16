@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const Title = ( { name } ) => {
+class Title extends Component {
+  render() {
     return (
-        <h1>{name}</h1>
+      <h1>Welcome to your React App</h1>
     );
-};
+  }
+}
 
 Title.propTypes = {
-    name: PropTypes.string,
+  name: PropTypes.string,
 };
-
 
 export default Title;

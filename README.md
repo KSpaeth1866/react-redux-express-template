@@ -54,8 +54,12 @@ Heroku will follow the `build` command in your `package.json` and compile assets
 
 If you're unfamiliar with Heroku deployment (or just need a refresher), they have a really great walkthrough [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
 
-## Running on Glitch
+## Creating your Project from this Template
 
-1. Go to https://glitch.com/edit/#!/horizons-hackathon-react and click
-  `Remix this 🎤`
-1. Click `Show` at the top to preview your app!
+```
+$ git clone https://github.com/KSpaeth1866/react-redux-express-template.git
+$ cd react-redux-express-template
+$ git remote set-url origin https://github.com/name/new-repo.git
+$ git push origin master
+```
+Then rename as desired.
